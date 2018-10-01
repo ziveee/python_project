@@ -13,4 +13,7 @@ import numpy_test
 # numpy_test.numpy_operation2()
 
 # 测试numpy的索引、均值等基本运算
-numpy_test.numpy_basic_operation()
+# numpy_test.numpy_basic_operation()
+
+# 测试numpy的索引、切片、迭代
+numpy_test.numpy_index()

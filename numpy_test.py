@@ -95,3 +95,26 @@ def numpy_basic_operation():
     # clip：限定矩阵中元素的上下限
     print("B's element between 5 ann 9:")
     print(np.clip(B,5,9))
+
+def numpy_index():
+    # numpy索引、迭代的方法
+    A = np.arange(3,15)
+    print(A)
+    print("A[3]: ", A[3])
+    A = A.reshape(3,4)
+    print(A)
+    print("A[2]: ", A[2])
+    print("A[1][1]: ", A[1][1])
+    print("A[1, 1]: ", A[1, 1])
+    print("A[1, 1:3]: ", A[1, 1:3])
+    print("print A's row: ")
+    for row in A:
+        print(row)
+    print("print A's column: ")
+    for column in A.T:
+        print(column)
+    # flatten：展开成一行， flat：迭代器，object
+    print("A.flatten: ", A.flatten())
+    print("A.flat: ")
+    for item in A.flat:
+        print(item)
