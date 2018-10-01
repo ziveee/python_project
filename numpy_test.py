@@ -68,3 +68,30 @@ def numpy_operation2():
     print('c_rows_max = ', np.max(c, axis=1))
     print('c_columns_sum = ', np.sum(c, axis=0))
     print('c_columns_min = ', np.min(c, axis=0))
+
+def numpy_basic_operation():
+    # 索引、平均值等基本运算
+    A = np.arange(2, 14).reshape((3, 4))
+    print('A: ')
+    print(A)
+    # 索引
+    print("min element's order in A: ", np.argmin(A))
+    print("max element's order in A: ", np.argmax(A))
+    # 均值
+    print("A.mean: ", A.mean())
+    # cumsum累加:生成的每一项矩阵元素均是从原矩阵首项累加到对应项的元素之和。
+    print("A.cumsum: ", np.cumsum(A))
+    # 累差diff：前一项于后一项之差
+    print("A.diff: ", np.diff(A))
+    # nonzero：将所有非零元素的行于列坐标分割开，重构成两个分别关于行和列的矩阵
+    print("A.nonzero: ", np.nonzero(A))
+    # sort：按照行进行排序
+    B = np.arange(14,2,-1).reshape((3,4))
+    print('B:')
+    print(B)
+    print("sort B: ", np.sort(B))
+    # 转置的两种方式：transpose和T
+    print("B's transpose: ", B.T)
+    # clip：限定矩阵中元素的上下限
+    print("B's element between 5 ann 9:")
+    print(np.clip(B,5,9))
