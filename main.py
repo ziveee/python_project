@@ -1,4 +1,4 @@
-import numpy_test
+# import numpy_test
 
 # 测试numpy的属性
 # numpy_test.numpy_attributes()
@@ -16,4 +16,17 @@ import numpy_test
 # numpy_test.numpy_basic_operation()
 
 # 测试numpy的索引、切片、迭代
-numpy_test.numpy_index()
+# numpy_test.numpy_index()
+
+# 测试numpy的合并
+# numpy_test.numpy_merge()
+
+# 测试numpy的g分割
+# numpy_test.numpy_split()
+
+# 测试numpy的复制
+# numpy_test.numpy_copy()
+
+import pandas_test
+
+pandas_test.pandas_definition()

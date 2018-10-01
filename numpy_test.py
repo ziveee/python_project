@@ -118,3 +118,54 @@ def numpy_index():
     print("A.flat: ")
     for item in A.flat:
         print(item)
+
+def numpy_merge():
+# array的合并
+    A = np.array([1,1,1]).reshape(-1,1) #concatenate需要两个dimensions，一维数组会报错
+    B = np.array([2,2,2]).reshape(-1,1)
+    print("A: ")
+    print(A)
+    print("B: ")
+    print(B)
+    print("vstack:", np.vstack((A, B))) #注意vstack((双括号))
+    print("hstack:", np.hstack((A, B)))
+    print("A[np.newaxis,:]")
+    print(A[np.newaxis,:])
+    print("A[:,np.newaxis]")
+    print(A[:,np.newaxis])
+    print("np.concatenate((A,B,B,A), axis=0)")
+    print(np.concatenate((A,B,B,A), axis=0))
+    print("np.concatenate((A,B,B,A), axis=1)")
+    print(np.concatenate((A,B,B,A), axis=1))
+
+def numpy_split():
+# array的分割
+    A = np.arange(12).reshape((3,4))
+    print(A)
+    # 纵向分割
+    print("split, axis = 1: ")
+    print(np.split(A, 2, axis=1))
+    # 横向分割
+    print("split, axis = 0: ")
+    print(np.split(A, 3, axis=0))
+    # 不等量的分割
+    print("np.array_split, axis = 1: ")
+    print(np.array_split(A, 3, axis=1))
+
+def numpy_copy():
+# 测试numpy的复制
+    A = np.arange(4)
+    print(A)
+    print("first B = A, then update A[0] = 11, finally print(B):")
+    B = A
+    A[0] = 11
+    print(B)
+    print("A: ")
+    print(A)
+    print("first C = A.copy(), then update A[0] = 22, finally print(C):")
+    C = A.copy()
+    A[0] = 22
+    print("C: ")
+    print(C)
+    print("A: ")
+    print(A)

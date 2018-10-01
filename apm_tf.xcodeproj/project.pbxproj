@@ -9,12 +9,14 @@
 /* Begin PBXFileReference section */
 		AE08A785216210E700A942CE /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
 		AE41331921622C7200D2227E /* numpy_test.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = numpy_test.py; sourceTree = "<group>"; };
+		AE58C11121626E54006029FB /* pandas_test.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pandas_test.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		AE08A7792162104200A942CE = {
 			isa = PBXGroup;
 			children = (
+				AE58C11121626E54006029FB /* pandas_test.py */,
 				AE41331921622C7200D2227E /* numpy_test.py */,
 				AE08A785216210E700A942CE /* main.py */,
 			);
