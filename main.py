@@ -29,4 +29,11 @@
 
 import pandas_test
 
-pandas_test.pandas_definition()
+# 测试pandas的基本概念
+# pandas_test.pandas_definition()
+
+# 测试pandas的简单运用
+# pandas_test.pandas_simple_operation()
+
+# 测试pandas的选择数据
+pandas_test.pandas_choose_data()
