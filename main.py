@@ -36,4 +36,13 @@ import pandas_test
 # pandas_test.pandas_simple_operation()
 
 # 测试pandas的选择数据
-pandas_test.pandas_choose_data()
+# pandas_test.pandas_choose_data()
+
+# pandas处理丢失数据
+# pandas_test.pandas_NaNData_test()
+
+# 测试pandas concat函数
+# pandas_test.pandas_concat_test()
+
+# 测试pandas merge函数
+# pandas_test.pandas_merge_test()
