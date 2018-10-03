@@ -203,8 +203,21 @@ def pandas_merge_test():
     print("inner merge, suffixes=['_boy','_girl']")
     print(pd.merge(boys, girls, on='k', suffixes=['_boy','_girl'], how='inner'))
                               
+def pandas_test_list():
+    # 测试pandas的基本概念
+    pandas_definition()
 
+    # 测试pandas的简单运用
+    # pandas_simple_operation()
 
+    # 测试pandas的选择数据
+    # pandas_choose_data()
 
+    # pandas处理丢失数据
+    # pandas_NaNData_test()
 
-# 这是倒数第二行
+    # 测试pandas concat函数
+    # pandas_concat_test()
+
+    # 测试pandas merge函数
+    # pandas_merge_test()
