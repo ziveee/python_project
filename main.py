@@ -7,5 +7,9 @@
 # pandas_test.pandas_test_list()
 
 # 测试pandas_plot
-import pandas_plot_test
-pandas_plot_test.pandas_plot_test_list()
+# import pandas_plot_test
+# pandas_plot_test.pandas_plot_test_list()
+
+# 测试Matplotlib
+import matplotlib_test
+matplotlib_test.matplotlib_test_list()
